@@ -9,8 +9,8 @@
         
         <bean id="c" class="beans.Car" />
         <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
-        	<property name="StaticMethod" value="beans.Car.setCarname" />
-       		<property name="Arguments">
+        	<property name="StaticMethod" value="beans.Car.setCarname" /><!-- by using StaticMethod(String StaticMethod) you need Configure your static method -->
+       		<property name="Arguments"><!--by using Arguments you need to pass that method Arguments or array type values   -->
        			<list>
        				<value>Audi Car</value>
        			</list>
